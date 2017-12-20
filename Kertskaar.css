@@ -1,0 +1,98 @@
+.snow-container {
+    position: absolute;
+    height: 1000px;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    overflow: hidden;
+    z-index: 2;
+    pointer-events: none;
+
+}
+body{background-image: url("groene-3d-kerst-achtergrond-met-gouden-kralen-en-kerstballen.jpg");
+    background-size: cover;
+    font-family: 'Mountains of Christmas';
+
+    width: 100%}
+h1{color: green}
+
+.snow {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    -webkit-animation: snow linear infinite;
+    animation: snow linear infinite;
+}
+.snow.foreground {
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
+    -webkit-animation-duration: 15s;
+    animation-duration: 15s;
+}
+.snow.foreground.layered {
+    -webkit-animation-delay: 7.5s;
+    animation-delay: 7.5s;
+}
+.snow.middleground {
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png");
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+}
+.snow.middleground.layered {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+}
+.snow.background {
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png");
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
+}
+.snow.background.layered {
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+}
+
+@-webkit-keyframes snow {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(15%, 100%, 0);
+        transform: translate3d(15%, 100%, 0);
+    }
+}
+
+@keyframes snow {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(15%, 100%, 0);
+        transform: translate3d(15%, 100%, 0);
+    }
+}
+.mountain{background-image: url("5-2-mountain-transparent.png")}
+#style{
+    text-shadow: 0 0 110px #ff0001,0 0 100px #ff0001, 0 0 100px #ff0001;
+    color: #ff0001;
+}
+#style1{
+    text-shadow: 0 0 110px #22ff00,0 0 100px #22ff00, 0 0 100px #22ff00;
+    color: #000000;
+    font-size: 150%;
+    padding: 75px;
+}
+p{font-size: 400%}
+img{-webkit-filter: drop-shadow(10px 10px 10px #f9ff00);
+    filter: drop-shadow(10px 10px 10px #f9ff00);}
+#star{box-shadow: 0 0 80px yellow
+}
+.tree{padding: 120px; margin-bottom: 100px}
